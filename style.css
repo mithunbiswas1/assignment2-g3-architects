@@ -26,6 +26,12 @@ h2{
     font-size: 2.81rem;
 }
 
+h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+
 p{
     font-size: 1rem;
     font-weight: 400;
@@ -94,7 +100,7 @@ nav ul li a{
     width: 100%;
 }
 
-/* ---------- Universal Declaration---------- */
+/* ---------- Quick Feature Section---------- */
 .quick-feature{
     display: flex;
     align-items: center;
@@ -118,4 +124,50 @@ nav ul li a{
 
 .quick-feature-description h2 .features{
     color: var(--secondary-color);
+}
+
+
+/* ---------- Feature Article Section---------- */
+.article-section{
+    display: flex;
+    align-items: center;
+}
+
+.feature-article, .feature-article-right{
+    width: 50%;
+}
+
+.feature-article{
+    padding-right: 12rem;
+}
+
+.feature-article-heading h1{
+    border-left: 5px solid var(--secondary-color);
+    padding-left: 1.25rem;
+}
+
+.feature-article-right img{
+    width: 100%;
+}
+
+.article-main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.article-post{
+    padding: 20px;
+    box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.feature-article-right{
+    position: relative;
+}
+
+.feature-article-right button{
+    position: absolute;
+    padding: 3rem;
+    left: -100px;
+    bottom: -60px;
 }
