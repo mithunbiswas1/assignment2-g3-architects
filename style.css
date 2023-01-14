@@ -7,7 +7,6 @@
 }
 
 /* ---------- Universal Declaration---------- */
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -30,10 +29,13 @@ h2{
 p{
     font-size: 1rem;
     font-weight: 400;
+    line-height: 1.6rem;
     color: var(--tertiary-color);
     margin: 1rem 0 2rem;
 }
 
+
+/* ---------- Header Section---------- */
 header{
     background: rgba(255, 144, 14, 0.1);
 }
@@ -90,4 +92,30 @@ nav ul li a{
 
 .header-banner img{
     width: 100%;
+}
+
+/* ---------- Universal Declaration---------- */
+.quick-feature{
+    display: flex;
+    align-items: center;
+}
+
+.quick-feature-feature-image, .quick-feature-description{
+    width: 50%;
+    margin: 2.5rem;
+}
+
+.quick-feature-feature-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.quick-feature-description h2 .quick-list{
+    color: var(--tertiary-color);
+    font-weight: 500;
+}
+
+.quick-feature-description h2 .features{
+    color: var(--secondary-color);
 }
